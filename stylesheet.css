@@ -55,7 +55,6 @@ header a:hover {
 	justify-content: center; /* X-axis */
 	align-items: center; /* Y-axis */
 	margin-right: 8px;
-	
 }
 
 footer {
@@ -77,7 +76,7 @@ footer a {
 
 main {
 	display: flex;
-	min-height: 80vh;
+	min-height: calc(100vh - 30px - 80px);
 	margin-top: 80px;
 	margin-bottom: 0px;
 }
