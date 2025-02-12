@@ -1,0 +1,30 @@
+[
+    {
+        "brand": "Audi",
+        "company": "Volkswagen"
+    },
+    {
+        "brand": "Saab",
+        "company": "Saab"
+    },
+    {
+        "brand": "Neue Marke",
+        "company": "Neuer Hersteller"
+    },
+    {
+        "brand": "Trabant",
+        "company": "VEB Schkopau"
+    },
+    {
+        "brand": "Maybach",
+        "company": "Daimler-Benz"
+    },
+    {
+        "brand": "Toyota",
+        "company": "Toyota"
+    },
+    {
+        "brand": "MAN",
+        "company": "Volkswagen"
+    }
+]
