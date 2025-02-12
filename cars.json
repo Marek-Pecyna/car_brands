@@ -8,8 +8,8 @@
         "company": "Saab"
     },
     {
-        "brand": "Neue Marke",
-        "company": "Neuer Hersteller"
+        "brand": "Mercedes",
+        "company": "Daimler-Benz"
     },
     {
         "brand": "Trabant",
@@ -18,10 +18,6 @@
     {
         "brand": "Maybach",
         "company": "Daimler-Benz"
-    },
-    {
-        "brand": "Toyota",
-        "company": "Toyota"
     },
     {
         "brand": "MAN",

@@ -4,11 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<title>Erstes Projekt</title>
+	<title>Automarken</title>
 	<link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-	
 	<header>
 		<h1><a href="index.php">Automarken</a></h1>
 		<div class=username>
@@ -30,11 +29,9 @@
 			<img src="img/add.svg">
 			Hinzufügen
 			</a>
-			
 		</nav>
-	
-		<!-- div ist ein Container -->
-		<div class=content>
+		
+		<div class=content> <!-- div ist ein Container -->
 		<?php
 			// Einfache ' Anführungszeichen für einzeiligen Text
 			// Doppelte " Anführungszeichen für mehrzeiligen Text
@@ -45,8 +42,8 @@
 			
 			//Define and fill array
 			$cars = [];
-			if(file_exists('cars.txt')) {
-				$text = file_get_contents('cars.txt', true);
+			if(file_exists('cars.json')) {
+				$text = file_get_contents('cars.json', true);
 				$cars = json_decode($text, true);
 			}
 				
@@ -89,7 +86,7 @@
 						'company' => htmlentities($_POST['company'])
 					];
 					array_push($cars, $newCar);
-					file_put_contents('cars.txt', json_encode($cars, JSON_PRETTY_PRINT));
+					file_put_contents('cars.json', json_encode($cars, JSON_PRETTY_PRINT));
 					header('Location: ./?page=show&added=' . $_POST['brand'], true, 301);
 					die();
 				} else {
@@ -122,7 +119,7 @@
 						];
 						array_push($newCarList, $newCar);
 					}
-					file_put_contents('cars.txt', json_encode($newCarList, JSON_PRETTY_PRINT));
+					file_put_contents('cars.json', json_encode($newCarList, JSON_PRETTY_PRINT));
 					$cars = $newCarList;
 					header('Location: ./?page=show&deleted=' . $_POST['delete'], true, 301);
 					die();
@@ -149,7 +146,7 @@
 							";
 						}
 					}
-				} elseif(isset($_POST['brand']) && isset($_POST['company']) &&isset($_POST['key'])) {
+				} elseif(isset($_POST['brand']) && isset($_POST['company']) && isset($_POST['key'])) {
 					$newCarList = [];
 					foreach ($cars as $key => $row) {
 						$brand = $row['brand'];
@@ -164,7 +161,7 @@
 						];
 						array_push($newCarList, $newCar);
 					}
-					file_put_contents('cars.txt', json_encode($newCarList, JSON_PRETTY_PRINT));
+					file_put_contents('cars.json', json_encode($newCarList, JSON_PRETTY_PRINT));
 					$cars = $newCarList;
 					header('Location: ./?page=show&edited=' . $_POST['brand'], true, 301);
 					die();
@@ -200,7 +197,6 @@
 					case "edit":
 						$cars = edit_car($cars);
 						break;
-					
 					default: // home
 					   welcome();
 				}
