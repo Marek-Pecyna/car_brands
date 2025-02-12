@@ -27,7 +27,7 @@
 			</a>
 			
 			<a href="index.php?page=add" title="Neue Automarke anlegen">
-			<img src="img/add2.svg">
+			<img src="img/add.svg">
 			Hinzufügen
 			</a>
 			
