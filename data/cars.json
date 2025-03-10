@@ -1,0 +1,34 @@
+[
+    {
+        "brand": "Rolls-Royce",
+        "company": "Rolls-Royce Holding"
+    },
+    {
+        "brand": "Audi",
+        "company": "Volkswagen Motoren AG"
+    },
+    {
+        "brand": "Mitsubishi",
+        "company": "Mitsubishi Motors"
+    },
+    {
+        "brand": "Mercedes",
+        "company": "Daimler-Benz"
+    },
+    {
+        "brand": "Volvo",
+        "company": "Volvo Motors"
+    },
+    {
+        "brand": "BMW",
+        "company": "Bayrische Motorenwerke"
+    },
+    {
+        "brand": "Suzuki",
+        "company": "Suzuki Motors"
+    },
+    {
+        "brand": "Maybach",
+        "company": "Daimler-Benz"
+    }
+]
